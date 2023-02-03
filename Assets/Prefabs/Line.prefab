@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 50580824413015916}
   - component: {fileID: 60438052409893480}
   - component: {fileID: 114059475960098006}
+  - component: {fileID: 7160732761564791137}
   m_Layer: 0
   m_Name: Line
   m_TagString: Untagged
@@ -204,3 +205,15 @@ MonoBehaviour:
   pointZPosition: 0
   autoAddColliderPoint: 1
   maxPoints: 200
+--- !u!114 &7160732761564791137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1200634299604260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbe2cd30a6cb00e46aa1c4a3472f8bfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
