@@ -12,7 +12,12 @@ public class CollisionChecker : MonoBehaviour
     void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Enemy") {
-            mainController.TriggerGameOver();
+            mainController.DecreaseSpeed();
+        }
+
+        if (collision.gameObject.tag == "Item") {
+            Destroy(collision.gameObject);
+            mainController.IncreaseSpeed();
         }
     }
 }

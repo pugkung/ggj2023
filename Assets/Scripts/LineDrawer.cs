@@ -49,6 +49,10 @@ public GameObject linePrefab;
 		}
 	}
 
+	public void SetLineWidth(float newWidth) {
+		currentLine.GetComponent<LineRenderer>().SetWidth(newWidth, 1.0f);
+	}
+
 	private void CreateNewLine ()
 	{
 		currentLine = (Instantiate (linePrefab, Vector3.zero, Quaternion.identity) as GameObject).GetComponent<Line> ();

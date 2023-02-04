@@ -7,6 +7,7 @@ TagManager:
   - Target
   - VechicleUISpeed
   - Enemy
+  - Item
   layers:
   - Default
   - TransparentFX
@@ -14,9 +15,9 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
+  - Background
+  - Foreground
+  - UI
   - 
   - 
   - 
@@ -43,4 +44,13 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 4030511029
+    locked: 0
+  - name: Particles
+    uniqueID: 4140411503
+    locked: 0
+  - name: Foreground
+    uniqueID: 2618372359
     locked: 0
