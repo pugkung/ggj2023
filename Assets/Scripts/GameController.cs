@@ -91,15 +91,23 @@ public class GameController : MonoBehaviour
         moveScript.yspeed = 0;
         gyroController.treshold = 9999999999;   // disable input
 
+        GameObject line = lineDrawerObj.transform.GetChild(0).gameObject;
+        RandomSpawnRoots(line);
         RescaleTree(score);
         ZoomOutCamera(score);
-        // StartCoroutine(Delay(5));
         // gameOverText.SetActive(true);
     }
 
     public void RescaleTree(float factor) {
         tree.transform.localScale = new Vector3(factor, factor, 1);
         tree.transform.position = new Vector3(0, score * 1.5f, 0);
+    }
+
+    public void RandomSpawnRoots(GameObject mainRoot) {
+        for (int i=0; i<7; i++) {
+            GameObject copyRoot = Instantiate(mainRoot, mainRoot.transform.position, Quaternion.Euler(0, 0, Random.Range(-80.0f, 80.0f)));
+            copyRoot.transform.localScale *= Random.Range(0.25f, 0.6f);
+        }
     }
 
     public void ZoomOutCamera(float yPosition)
@@ -133,9 +141,5 @@ public class GameController : MonoBehaviour
         }
 
         return approxCameraDistance;
-    }
-
-    IEnumerator Delay(int seconds) {
-        yield return new WaitForSeconds(seconds);
     }
 }

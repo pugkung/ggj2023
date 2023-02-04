@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6132759616860166569}
   - component: {fileID: 6132759616860166566}
   - component: {fileID: 6132759616860166567}
+  - component: {fileID: -7918183408010388328}
   m_Layer: 0
   m_Name: Leaf
   m_TagString: Item
@@ -123,3 +124,16 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &-7918183408010388328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6132759616860166564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 405c6534af51e1e4b9f0a32fb4e9b1e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deleteDelay: 3
